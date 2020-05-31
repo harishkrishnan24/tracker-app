@@ -18,6 +18,7 @@ const mongoUri = `mongodb+srv://test:test@cluster0-uskg7.mongodb.net/test?retryW
 mongoose.connect(mongoUri, {
 	useNewUrlParser: true,
 	useCreateIndex: true,
+	useUnifiedTopology: true,
 });
 
 mongoose.connection.on("connected", () => {

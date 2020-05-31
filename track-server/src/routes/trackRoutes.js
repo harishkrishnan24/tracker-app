@@ -4,7 +4,7 @@ const requireAuth = require("../middlewares/requireAuth");
 
 const Track = mongoose.model("Track");
 
-const router = express.router();
+const router = express.Router();
 
 router.use(requireAuth);
 
